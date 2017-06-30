@@ -1,0 +1,58 @@
+*{
+	margin: 0px;
+}
+html{
+	background-color: rgb(56,56,56);
+}
+.welcome{
+	background-color: lightblue;
+}
+.snippet{
+	margin: 2px;
+	background-color: rgb(112,112,112);
+	color: white;
+	display: block;
+	word-wrap:break-word;
+	width: 100%;
+	font-size: 18px;
+	margin:5px;
+	padding: 2px;
+}
+.welcome textarea{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	left:20px;
+	background-color: rgb(18,36,66);
+	color: #00FF00 ;
+}
+.welcome button{
+	position: relative;
+	background:rgb(18,36,66);
+	color: white;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 5px;
+	left: 20px;
+	top: -45px;
+}
+.welcome h2{
+	position: relative;
+	padding: 10px;
+	color: rgb(18,36,66);
+	left: 2%;
+}
+#logout button{
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	background-color: white;
+	background:rgb(18,36,66);
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+#logout button a:link, a:visited{
+	color: white;
+	text-decoration: none;
+}
