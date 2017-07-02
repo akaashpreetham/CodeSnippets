@@ -2,14 +2,14 @@
 	margin: 0px;
 }
 html{
-	background-color: rgb(56,56,56);
+	background-color: rgb(112,112,112);
 }
 .welcome{
 	background-color: lightblue;
 }
 .snippet{
 	margin: 2px;
-	background-color: rgb(112,112,112);
+	background-color: rgb(56,56,56);
 	color: white;
 	display: block;
 	word-wrap:break-word;
@@ -51,8 +51,4 @@ html{
 	height: 30px;
 	border: 2px solid white;
 	border-radius: 5px;
-}
-#logout button a:link, a:visited{
-	color: white;
-	text-decoration: none;
 }

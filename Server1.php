@@ -5,10 +5,10 @@
 	$errors=array();
 	$connect=mysqli_connect('localhost','root','','TEST');
 	if(isset($_POST['submit'])){
-		$username=$_POST['username'];
-		$email=$_POST['email'];
-		$password1=$_POST['password1'];
-		$password2=$_POST['password2'];
+		$username=mysqli_real_escape_string($connect,$_POST['username']);
+		$email=mysqli_real_escape_string($connect,$_POST['email']);
+		$password1=mysqli_real_escape_string($connect,$_POST['password1']);
+		$password2=mysqli_real_escape_string($connect,$_POST['password2']);
 		if(empty($username))
 			array_push($errors, "Username is required");
 		if(empty($email))
@@ -27,8 +27,8 @@
 		}
 	}
 	if(isset($_POST['login'])){
-		$username=$_POST['username'];
-		$password=$_POST['password'];
+		$username=mysqli_real_escape_string($connect,$_POST['username']);
+		$password=mysqli_real_escape_string($connect,$_POST['password']);
 		if(empty($username))
 			array_push($errors, "Username is required");
 		if(empty($password))
