@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="StyleLoginPage.css">
 </head>
 <body>
-	<form class="form" method="POST" action="Login.php">
+	<form class="form" method="POST" action="<?php echo htmlspecialchars('Login.php');?>">
 		<div class="formelements">
 			<h1 id="header">Login</h1>
 		</div>

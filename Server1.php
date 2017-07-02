@@ -9,6 +9,9 @@
 		$email=mysqli_real_escape_string($connect,$_POST['email']);
 		$password1=mysqli_real_escape_string($connect,$_POST['password1']);
 		$password2=mysqli_real_escape_string($connect,$_POST['password2']);
+		$q=mysqli_query($connect,"SELECT * FROM myuser WHERE username='$username' OR email='$email'");
+		if(mysqli_num_rows($q)>0)
+			array_push($errors,"Username/email already exists");
 		if(empty($username))
 			array_push($errors, "Username is required");
 		if(empty($email))
